@@ -5,15 +5,18 @@
 <body>
 <script>
 sum=0
-ii=100
+//data = [1,2,3,4,5]
+data =prompt("input Numbers")
+data =data.split(' ')
+data = data.map(Number)
 start = new Date()
-for (i=1 ; i<=ii; i++) {
-	sum = sum + i
-	//document.write(" i is " + i  + " sum is " +  sum +"<br>")
+for (i=0 ; i<data.length ; i++) {
+	sum = sum + data[i]
+	document.write(" <i>i is " + i  + " data is " +  data[i] +"<br>")
 }	
 end = new Date()
-document.write(" i is " + i  + " sum is " +  sum +"<br>")
-document.write("Computing Time is" + (end-start) + "ms")
+document.write("sum is " + sum +"<br>")
+//document.write("Computing Time is" + (end-start) + "ms")
 </script>
 </body>
-</html>
+</html>		
